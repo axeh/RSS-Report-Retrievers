@@ -218,7 +218,7 @@ namespace RSSReportRetrievers.Services
 
         public List<ReportItemDTO> LoadDependantItems(string reportModelpath)
         {
-            throw new Exception("The method or operation is not implemented.");
+            return new List<ReportItemDTO>();
         }
 
         private static ReportItemTypes GetReportItemTypeFromSsrsItemTyp(ItemTypeEnum ssrsType)

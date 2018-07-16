@@ -92,7 +92,6 @@
     <Compile Include="FormDatasource.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Properties\Settings.cs" />
     <Compile Include="Properties\Resources.cs" />
     <Compile Include="Forms\FormDependantItems.cs">
       <SubType>Form</SubType>
@@ -115,10 +114,6 @@
     <EmbeddedResource Include="Properties\Resources.resx" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RssReportRetrievers.WebServices\RSSReportRetrievers.WebServices.csproj">
-      <Project>{76c48390-63e5-4d18-923d-0b6aff2b8f80}</Project>
-      <Name>RSSReportRetrievers.WebServices</Name>
-    </ProjectReference>
     <ProjectReference Include="RSSReportRetrievers.Model\RSSReportRetrievers.Model.csproj">
       <Project>{052f7f29-dd98-4766-a59a-d0cd5b7687c4}</Project>
       <Name>RSSReportRetrievers.Model</Name>
@@ -126,6 +121,10 @@
     <ProjectReference Include="RSSReportRetrievers.Services\RSSReportRetrievers.Services.csproj">
       <Project>{d915612c-05bd-4d94-837e-c938b31e815f}</Project>
       <Name>RSSReportRetrievers.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="RssReportRetrievers.WebServices\RSSReportRetrievers.WebServices.csproj">
+      <Project>{76c48390-63e5-4d18-923d-0b6aff2b8f80}</Project>
+      <Name>RSSReportRetrievers.WebServices</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -136,7 +135,9 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

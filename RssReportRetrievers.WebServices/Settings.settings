@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="RSSReportRetrievers.WebServices" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="RSS2005" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://localhost/ReportServer/ReportService2005.asmx</Value>
+    </Setting>
+    <Setting Name="RSS2000" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://localhost/ReportServer/ReportService.asmx</Value>
+    </Setting>
+    <Setting Name="RSSSHAREPOINT" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://localhost:8080/ReportServer/ReportService2006.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
