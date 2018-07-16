@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\alenh\Desktop\GreenCube\SSRSExplorer\RSS Report Retrievers.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1645798F-11A7-459C-9557-2BBBB9A2C4B4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>RSS Report Retrievers</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>RSS_Report_Retrievers</RootNamespace>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormSelectFilesystemFolder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGetName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IFormSetPolicy.cs" />
+    <Compile Include="FormSetPolicy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controller.cs" />
+    <Compile Include="FormSSRSSItemSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProperties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormServers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="ReportingServicesFactory.cs" />
+    <Compile Include="FormSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSSRSExplorer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDatasource.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\Settings.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="Forms\FormDependantItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IFormSetPolicy.cs" />
+    <Compile Include="Forms\ReportTestResult.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormDatasource.resx" />
+    <EmbeddedResource Include="FormGetName.resx" />
+    <EmbeddedResource Include="FormProperties.resx" />
+    <EmbeddedResource Include="Forms\FormDependantItems.resx" />
+    <EmbeddedResource Include="FormSelectFilesystemFolder.resx" />
+    <EmbeddedResource Include="FormServers.resx" />
+    <EmbeddedResource Include="FormSetPolicy.resx" />
+    <EmbeddedResource Include="FormSettings.resx" />
+    <EmbeddedResource Include="FormSSRSExplorer.resx" />
+    <EmbeddedResource Include="FormSSRSSItemSelector.resx" />
+    <EmbeddedResource Include="Properties\Resources.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RssReportRetrievers.WebServices\RSSReportRetrievers.WebServices.csproj">
+      <Project>{76c48390-63e5-4d18-923d-0b6aff2b8f80}</Project>
+      <Name>RSSReportRetrievers.WebServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="RSSReportRetrievers.Model\RSSReportRetrievers.Model.csproj">
+      <Project>{052f7f29-dd98-4766-a59a-d0cd5b7687c4}</Project>
+      <Name>RSSReportRetrievers.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="RSSReportRetrievers.Services\RSSReportRetrievers.Services.csproj">
+      <Project>{d915612c-05bd-4d94-837e-c938b31e815f}</Project>
+      <Name>RSSReportRetrievers.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
